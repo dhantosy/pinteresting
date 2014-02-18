@@ -84,7 +84,7 @@ Pinteresting::Application.configure do
 
 
   # Sets Paperclip to upload images to Heroku
-  Config.paperclip_defaults = {
+  config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
       :bucket => ENV['AWS_BUCKET'],
